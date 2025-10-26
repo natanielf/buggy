@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Launch debugger",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/${input:programName}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "preLaunchTask": "build"
+        },
+    ],
+    "inputs": [
+        {
+            "type": "pickString",
+            "id": "programName",
+            "description": "Select the program to debug",
+            "options": [
+                "array",
+                "list",
+                "segfaults"
+            ]
+        }
+    ]
+}

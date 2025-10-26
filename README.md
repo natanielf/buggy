@@ -50,3 +50,7 @@ $ lldb ./[PROGRAM]
 | `next`                                       | Advances to the next line of the current function |
 | `step`                                       | Steps into a function call                        |
 | `thread backtrace`                           | Displays the program call stack                   |
+
+#### Additional LLDB Resources
+
+- https://lldb.llvm.org/use/tutorial.html

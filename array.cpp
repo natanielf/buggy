@@ -2,24 +2,38 @@
 
 using namespace std;
 
-// TODO: Implement the printArray fuction
-void printArray(int* arr, int size, bool reverse) {
+#define SIZE 5
+
+void print_array(int* arr, int size, bool reverse) {
     // If reverse is true, print the elements in reverse order
     // Otherwise, print the elements normally
+    cout << "[";
+    if (reverse) {
+        for (int i = size - 1; i >= 0; --i) {
+            cout << arr[i];
+            if (i > 0) cout << ", ";
+        }
+    } else {
+        for (int i = 0; i < size; ++i) {
+            cout << arr[i];
+            if (i < size - 1) cout << ", ";
+        }
+    }
+    cout << "]" << endl;
 }
 
 int main() {
-    // Create an integer array of size 5
-    int nums[5];
+    // Create an integer array
+    int nums[SIZE];
 
-    // Populate each element of the array with its index * 2
-    for (int i = 0; i < 5; ++i) {
+    // Populate each element of the array
+    for (int i = 0; i < SIZE; ++i) {
         nums[i] = i * 2;
     }
 
-    // Call the printArray function on the array
-    printArray(nums, 5, false);
-    printArray(nums, 5, true);
+    // Print the array
+    print_array(nums, SIZE, false);
+    print_array(nums, SIZE, true);
 
     return 0;
 }

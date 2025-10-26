@@ -13,12 +13,12 @@ void buffer_overflow() {
 }
 
 void null_ptr_dereference() {
-    int *i = NULL;
+    int* i = NULL;
     *i = 10;
 }
 
 void read_only_memory() {
-    char *s = "chapman";
+    char* s = "chapman";
     *s = 'C';
 }
 

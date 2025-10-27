@@ -4,22 +4,26 @@
 #include <stdio.h>
 
 void stack_overflow() {
+    // Infinite recursion
     stack_overflow();
 }
 
 void buffer_overflow() {
+    // Out of bounds access
     char s[] = "panther";
     char c = s[10];
 }
 
 void null_ptr_dereference() {
+    // Invalid memory address
     int* i = NULL;
     *i = 10;
 }
 
 void read_only_memory() {
+    // This string literal is stored in read-only memory
     char* s = "chapman";
-    *s = 'C';
+    s[0] = 'C';
 }
 
 int main(void) {

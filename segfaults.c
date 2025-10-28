@@ -21,7 +21,8 @@ void null_ptr_dereference() {
 }
 
 void read_only_memory() {
-    // This string literal is stored in read-only memory
+    // This string literal is stored in the read-only data segment
+    // https://en.wikipedia.org/wiki/Data_segment#rodata
     char* s = "chapman";
     s[0] = 'C';
 }

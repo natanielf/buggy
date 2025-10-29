@@ -10,7 +10,6 @@
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
-            "preLaunchTask": "build"
         },
     ],
     "inputs": [
